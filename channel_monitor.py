@@ -10,8 +10,8 @@ import re
 import asyncio
 from telethon import TelegramClient, events
 from telethon.tl.types import Channel, Chat
-from utils.config import (
-    TELEGRAM_API_ID, TELEGRAM_API_HASH, TELEGRAM_PHONE,
+from config import (
+TELEGRAM_API_ID, TELEGRAM_API_HASH, TELEGRAM_PHONE,
     load_channels, logger
 )
 
