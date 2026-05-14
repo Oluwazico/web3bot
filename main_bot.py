@@ -12,15 +12,15 @@ from telegram.ext import (
 )
 from telegram.constants import ParseMode
 
-from utils.config import (
+from config import (
     TELEGRAM_BOT_TOKEN, TELEGRAM_YOUR_USER_ID,
     SCAN_INTERVAL, MAX_PROJECTS_PER_SCAN,
     load_seen, save_seen, mark_seen,
     load_channels, save_channels, logger
 )
-from scrapers.platforms import fetch_all_platforms
-from scrapers.channel_monitor import ChannelMonitor
-from finders.owner_finder import find_owner, format_project_card
+from platforms import fetch_all_platforms
+from channel_monitor import ChannelMonitor
+from owner_finder import find_owner, format_project_card
 
 # Bot state
 bot_state = {
