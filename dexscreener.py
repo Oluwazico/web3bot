@@ -6,7 +6,7 @@ DexScreener Scraper
 
 import aiohttp
 import asyncio
-from config.config import logger, MIN_LIQUIDITY_USD
+from config import logger, MIN_LIQUIDITY_USD
 
 DEXSCREENER_NEW_PAIRS = "https://api.dexscreener.com/token-profiles/latest/v1"
 DEXSCREENER_SEARCH    = "https://api.dexscreener.com/latest/dex/tokens/{contract}"
