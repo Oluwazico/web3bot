@@ -9,9 +9,8 @@ import aiohttp
 import json
 import re
 from playwright.async_api import async_playwright, Browser, BrowserContext
-from utils.config import logger
-from scrapers.dexscreener import enrich_socials_from_dexscreener
-
+from config import logger
+from dexscreener import enrich_socials_from_dexscreener
 # ── Regex to extract contract addresses (EVM + Solana) ────
 EVM_CA_RE  = re.compile(r'\b0x[a-fA-F0-9]{40}\b')
 SOL_CA_RE  = re.compile(r'\b[1-9A-HJ-NP-Za-km-z]{32,44}\b')
