@@ -5,7 +5,7 @@ Combines Telegram + Twitter finders to get the best owner contact.
 
 import asyncio
 import aiohttp
-from finders.telegram_finder import find_telegram_owner, format_tg_contact
+from telegram_finder import find_telegram_owner, format_tg_contact
 from finders.twitter_finder  import find_twitter_owner,  format_twitter_contact
 from utils.config import logger
 
